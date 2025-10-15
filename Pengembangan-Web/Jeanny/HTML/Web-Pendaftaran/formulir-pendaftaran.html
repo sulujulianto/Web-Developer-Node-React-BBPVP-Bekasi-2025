@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff9e6;
+            padding: 30px;
+            border: 2px solid #ccc;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+            color: #ff69b4;
+            margin-bottom: 30px;
+        }
+        fieldset {
+            border: 2px solid #999;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #b8a8d8;
+        }
+        legend {
+            font-weight: bold;
+            padding: 5px 10px;
+            background-color: #fff9e6;
+            border: 1px solid #999;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #999;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .radio-group input,
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+        .date-range {
+            background-color: #ffcccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .date-range label {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+        }
+        .date-range input {
+            width: 150px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .pilihan-section {
+            background-color: #fff9e6;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 30px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="formulirPendaftaran.html">Formulir Pendaftaran</a> | 
+            <a href="tabelPeserta.html">Tabel Peserta</a>
+        </div>
+
+        <h2>Formulir Pendaftaran</h2>
+
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            
+            <label>Nama:</label>
+            <input type="text" name="nama">
+
+            <label>Jenis Kelamin:</label>
+            <div class="radio-group">
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki
+                <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+            </div>
+
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+            </select>
+
+            <label>Tempat Lahir:</label>
+            <input type="text" name="tempat_lahir">
+
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir">
+
+            <label>Alamat:</label>
+            <textarea name="alamat" rows="3"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pendidikan</legend>
+            
+            <div class="date-range">
+                <label>SD:</label>
+                <label>Masuk:</label>
+                <input type="date" name="sd_masuk">
+                <label>Keluar:</label>
+                <input type="date" name="sd_keluar">
+                <br><br>
+                
+                <label>SMP:</label>
+                <label>Masuk:</label>
+                <input type="date" name="smp_masuk">
+                <label>Keluar:</label>
+                <input type="date" name="smp_keluar">
+                <br><br>
+                
+                <label>SMA:</label>
+                <label>Masuk:</label>
+                <input type="date" name="sma_masuk">
+                <label>Keluar:</label>
+                <input type="date" name="sma_keluar">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pelatihan</legend>
+            
+            <div class="pilihan-section">
+                <label>Minat:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="minat[]" value="HTML, CSS, JavaScript"> HTML, CSS, JavaScript<br>
+                    <input type="checkbox" name="minat[]" value="HTML, PHP"> HTML, PHP
+                </div>
+
+                <label>Kompetensi:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="kompetensi[]" value="JavaScript"> JavaScript
+                    <input type="checkbox" name="kompetensi[]" value="PHP"> PHP
+                </div>
+            </div>
+
+            <label>Pilih Jurusan:</label>
+            <select name="jurusan">
+                <option value="">-- Pilih Jurusan --</option>
+                <optgroup label="Teknik">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                    <option value="Teknik Industri">Teknik Industri</option>
+                    <option value="Teknik Sipil">Teknik Sipil</option>
+                </optgroup>
+                <optgroup label="Ekonomi">
+                    <option value="Akuntansi">Akuntansi</option>
+                    <option value="Manajemen">Manajemen</option>
+                    <option value="Perbankan">Perbankan</option>
+                </optgroup>
+                <option value="Bisnis Digital">Bisnis Digital</option>
+            </select>
+        </fieldset>
+
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
