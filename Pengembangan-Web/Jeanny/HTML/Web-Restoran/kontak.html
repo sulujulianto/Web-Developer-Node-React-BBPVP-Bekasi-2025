@@ -1,124 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - Warung Sehat Bahagia</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6f7ff;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #f5fcff;
-            padding: 30px;
-            border: 1px solid #ccc;
-        }
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #2d5016;
-        }
-        .tagline {
-            text-align: center;
-            font-style: italic;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        nav {
-            text-align: center;
-            border-top: 1px solid #999;
-            border-bottom: 1px solid #999;
-            padding: 10px;
-            margin: 20px 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #2d5016;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        h2 {
-            text-align: center;
-            color: #c41e3a;
-            margin: 30px 0 20px 0;
-        }
-        .form-box {
-            max-width: 500px;
-            margin: 30px auto;
-            background-color: #fff;
-            padding: 30px;
-            border: 2px solid #999;
-        }
-        h3 {
-            color: #2d5016;
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input[type="text"] {
-            width: 95%;
-            padding: 8px;
-            border: 1px solid #999;
-        }
-        textarea {
-            width: 95%;
-            padding: 8px;
-            border: 1px solid #999;
-            resize: vertical;
-        }
-        input[type="button"] {
-            margin-top: 15px;
-            padding: 10px 25px;
-            background-color: #2d5016;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        input[type="button"]:hover {
-            background-color: #1a3009;
-        }
-        .contact-box {
-            text-align: center;
-            background-color: #fff;
-            padding: 15px;
-            margin: 20px 0;
-            border: 1px solid #ccc;
-        }
-        .footer-msg {
-            text-align: center;
-            color: #2d5016;
-            margin: 20px 0;
-        }
-        footer {
-            text-align: center;
-            font-size: 12px;
-            color: #777;
-            border-top: 1px solid #999;
-            padding-top: 15px;
-            margin-top: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style-kontak.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="img/logo.png" width="100" height="100" alt="Logo">
-        </div>
-        
-        <h1>🍃 Warung Sehat Bahagia 🍃</h1>
-        
-        <p class="tagline">Makan enak, hidup sehat dan bahagia</p>
+    <main>
+        <header>
+            <img src="img/logo.png" width="100" height="100" alt="Logo Warung Sehat Bahagia">
+            <h1>🍃 Warung Sehat Bahagia 🍃</h1>
+            <p class="tagline">Makan enak, hidup sehat dan bahagia</p>
+        </header>
         
         <nav>
             <a href="index.html">Beranda</a> | 
@@ -128,31 +22,31 @@
         
         <h2>☎️ Hubungi Kami ☎️</h2>
         
-        <div class="form-box">
+        <section class="form-box">
             <h3>Formulir Kontak</h3>
             
-            <label>Nama Lengkap:</label>
-            <input type="text" name="nama">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama">
             
-            <label>Email:</label>
-            <input type="text" name="email">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
             
-            <label>Pesan:</label>
-            <textarea name="pesan" rows="5"></textarea>
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="5"></textarea>
             
-            <input type="button" value="Kirim">
-        </div>
+            <button type="button">Kirim</button>
+        </section>
         
-        <div class="contact-box">
-            <p>📍 Jl. Melati No 25 — Telp: (021) 8765-4321 — 📧 Buka 07:00 - 21:00</p>
+        <aside>
+            <p>📍 Jl. Melati No 25 – Telp: (021) 8765-4321 – 🕒 Buka 07:00 - 21:00</p>
             <p><a href="#">Instagram</a> | <a href="#">WhatsApp</a></p>
-        </div>
+        </aside>
         
         <p class="footer-msg">💚 Terima kasih sudah menghubungi kami 💚</p>
         
         <footer>
             © 2025 Warung Sehat Bahagia. All rights reserved.
         </footer>
-    </div>
+    </main>
 </body>
 </html>
