@@ -1,7 +1,7 @@
 # 📚 Web Developer Training – BBPVP Bekasi (2025)
 
 <p align="center">
-  <img src="Images/kemnaker-logo.png" alt="Logo Kemnaker" width="120" style="margin-right:30px;"/>
+  <img src="Images/kemnaker-logo.png" alt="Logo Kemnaker" width="120" style="margin-right:50px;"/>
 </p>
 
 <br clear="both"/>
