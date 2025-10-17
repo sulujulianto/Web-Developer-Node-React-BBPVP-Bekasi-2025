@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style-formulir.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="formulir-Pendaftaran.html">Formulir Pendaftaran</a> | 
+            <a href="tabel-Peserta.html">Tabel Peserta</a>
+        </nav>
+
+        <h2>Formulir Pendaftaran</h2>
+
+        <section>
+            <fieldset>
+                <legend>Data Pribadi</legend>
+                
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama">
+
+                <label>Jenis Kelamin:</label>
+                <section class="radio-group">
+                    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-Laki">
+                    <label for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </section>
+
+                <label for="agama">Agama:</label>
+                <select id="agama" name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+
+                <label for="tempat_lahir">Tempat Lahir:</label>
+                <input type="text" id="tempat_lahir" name="tempat_lahir">
+
+                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="3"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pendidikan</legend>
+                
+                <section class="date-range">
+                    <p>
+                        <strong>SD:</strong>
+                        <label for="sd_masuk">Masuk:</label>
+                        <input type="date" id="sd_masuk" name="sd_masuk">
+                        <label for="sd_keluar">Keluar:</label>
+                        <input type="date" id="sd_keluar" name="sd_keluar">
+                    </p>
+                    
+                    <p>
+                        <strong>SMP:</strong>
+                        <label for="smp_masuk">Masuk:</label>
+                        <input type="date" id="smp_masuk" name="smp_masuk">
+                        <label for="smp_keluar">Keluar:</label>
+                        <input type="date" id="smp_keluar" name="smp_keluar">
+                    </p>
+                    
+                    <p>
+                        <strong>SMA:</strong>
+                        <label for="sma_masuk">Masuk:</label>
+                        <input type="date" id="sma_masuk" name="sma_masuk">
+                        <label for="sma_keluar">Keluar:</label>
+                        <input type="date" id="sma_keluar" name="sma_keluar">
+                    </p>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pelatihan</legend>
+                
+                <section class="pilihan-section">
+                    <label>Minat:</label>
+                    <section class="checkbox-group">
+                        <input type="checkbox" id="minat1" name="minat[]" value="HTML, CSS, JavaScript">
+                        <label for="minat1">HTML, CSS, JavaScript</label><br>
+                        <input type="checkbox" id="minat2" name="minat[]" value="HTML, PHP">
+                        <label for="minat2">HTML, PHP</label>
+                    </section>
+
+                    <label>Kompetensi:</label>
+                    <section class="checkbox-group">
+                        <input type="checkbox" id="komp1" name="kompetensi[]" value="JavaScript">
+                        <label for="komp1">JavaScript</label>
+                        <input type="checkbox" id="komp2" name="kompetensi[]" value="PHP">
+                        <label for="komp2">PHP</label>
+                    </section>
+                </section>
+
+                <label for="jurusan">Pilih Jurusan:</label>
+                <select id="jurusan" name="jurusan">
+                    <option value="">-- Pilih Jurusan --</option>
+                    <optgroup label="Teknik">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                        <option value="Teknik Sipil">Teknik Sipil</option>
+                    </optgroup>
+                    <optgroup label="Ekonomi">
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="Perbankan">Perbankan</option>
+                    </optgroup>
+                    <option value="Bisnis Digital">Bisnis Digital</option>
+                </select>
+            </fieldset>
+
+            <section class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
