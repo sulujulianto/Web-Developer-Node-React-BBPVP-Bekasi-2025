@@ -1,60 +1,45 @@
-// operator aritmatika
-let a = 10;
-let b = 3;
+// Aritmatika
+console.log("Aritmatika");
+let a = 150;
+let b = 40;
 
-console.log('=== OPERATOR ARITMATIKA ===');
-console.log('a =', a);
-console.log('b =', b);
-console.log('');
-console.log('Penjumlahan: a + b =', a + b);
-console.log('Pengurangan: a - b =', a - b);
-console.log('Perkalian: a * b =', a * b);
-console.log('Pembagian: a / b =', a / b);
-console.log('Modulus: a % b =', a % b);
-console.log('');
+console.log("Penjumlahan:", a + b);
+console.log("Pengurangan:", a - b);
+console.log("Perkalian:", a * b);
+console.log("Pembagian:", a / b);
+console.log("Modulus (sisa bagi):", a % b);
 
-// operator perbandingan
-let x = 5;
-let y = 8;
+// Assignment
+console.log("Assignment");
+let x = 35;
 
-console.log('=== OPERATOR PERBANDINGAN ===');
-console.log('x =', x);
-console.log('y =', y);
-console.log('');
-console.log('x == y:', x == y);
-console.log('x != y:', x != y);
-console.log('x > y:', x > y);
-console.log('x < y:', x < y);
-console.log('x >= y:', x >= y);
-console.log('x <= y:', x <= y);
-console.log('');
+x += 5;
+console.log("x += 5 =", x);
+x -= 2;
+console.log("x -= 2 =", x);
+x *= 3;
+console.log("x *= 3 =", x);
+x /= 2;
+console.log("x /= 2 =", x);
 
-// operator logika
-let benar = true;
-let salah = false;
+// Perbandingan
+console.log("Perbandingan");
+let c = 10;
+let d = "10";
 
-console.log('=== OPERATOR LOGIKA ===');
-console.log('benar =', benar);
-console.log('salah =', salah);
-console.log('');
-console.log('benar && salah:', benar && salah);
-console.log('benar || salah:', benar || salah);
-console.log('!benar:', !benar);
-console.log('');
+console.log("c == d :", c == d);
+console.log("c === d:", c === d);
+console.log("c != d :", c != d);
+console.log("c !== d:", c !== d);
+console.log("c > 5 :", c > 5);
+console.log("c <= 10:", c <= 10);
 
-// operator penugasan
-let nilai = 10;
-console.log('=== OPERATOR PENUGASAN ===');
-console.log('Nilai awal:', nilai);
+// Kondisional
+console.log("Kondisional");
 
-nilai += 5;
-console.log('Setelah += 5:', nilai);
+let umur = 20;
+let punyaKTP = true;
 
-nilai -= 3;
-console.log('Setelah -= 3:', nilai);
-
-nilai *= 2;
-console.log('Setelah *= 2:', nilai);
-
-nilai /= 4;
-console.log('Setelah /= 4:', nilai);
+console.log("Boleh buat SIM?", umur >= 17 && punyaKTP);
+console.log("Remaja atau dewasa?", umur < 13 || umur >= 20);
+console.log("Bukan anak-anak", !(umur < 13));
