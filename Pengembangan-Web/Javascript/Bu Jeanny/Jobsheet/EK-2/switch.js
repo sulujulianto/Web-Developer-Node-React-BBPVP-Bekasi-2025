@@ -1,84 +1,45 @@
-// contoh switch case untuk hari
-console.log('=== SWITCH CASE HARI ===');
-let hari = 3;
-let namaHari;
+let bulan = 6;
+let namaBulan;
 
-switch (hari) {
+switch (bulan) {
     case 1:
-        namaHari = 'Senin';
+        namaBulan = "Januari";
         break;
     case 2:
-        namaHari = 'Selasa';
+        namaBulan = "Februari";
         break;
     case 3:
-        namaHari = 'Rabu';
+        namaBulan = "Maret";
         break;
     case 4:
-        namaHari = 'Kamis';
+        namaBulan = "April";
         break;
     case 5:
-        namaHari = 'Jumat';
+        namaBulan = "Mei";
         break;
     case 6:
-        namaHari = 'Sabtu';
+        namaBulan = "Juni";
         break;
     case 7:
-        namaHari = 'Minggu';
+        namaBulan = "Juli";
+        break;
+    case 8:
+        namaBulan = "Agustus";
+        break;
+    case 9:
+        namaBulan = "September";
+        break;
+    case 10:
+        namaBulan = "Oktober";
+        break;
+    case 11:
+        namaBulan = "November";
+        break;
+    case 12:
+        namaBulan = "Desember";
         break;
     default:
-        namaHari = 'Hari tidak valid';
+        namaBulan = "Nomor bulan tidak valid";
 }
 
-console.log('Hari ke-' + hari + ' adalah ' + namaHari);
-console.log('');
-
-// contoh switch case untuk nilai
-console.log('=== SWITCH CASE NILAI ===');
-let grade = 'B';
-
-switch (grade) {
-    case 'A':
-        console.log('Sangat Baik');
-        break;
-    case 'B':
-        console.log('Baik');
-        break;
-    case 'C':
-        console.log('Cukup');
-        break;
-    case 'D':
-        console.log('Kurang');
-        break;
-    case 'E':
-        console.log('Sangat Kurang');
-        break;
-    default:
-        console.log('Nilai tidak valid');
-}
-console.log('');
-
-// contoh switch case untuk operator
-console.log('=== SWITCH CASE KALKULATOR ===');
-let angka1 = 10;
-let angka2 = 5;
-let operator = '+';
-let hasil;
-
-switch (operator) {
-    case '+':
-        hasil = angka1 + angka2;
-        break;
-    case '-':
-        hasil = angka1 - angka2;
-        break;
-    case '*':
-        hasil = angka1 * angka2;
-        break;
-    case '/':
-        hasil = angka1 / angka2;
-        break;
-    default:
-        hasil = 'Operator tidak valid';
-}
-
-console.log(angka1 + ' ' + operator + ' ' + angka2 + ' = ' + hasil);
+console.log("Bulan ke-" + bulan + " adalah " + namaBulan);
