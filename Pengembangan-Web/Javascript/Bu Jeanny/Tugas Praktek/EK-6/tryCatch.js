@@ -1,24 +1,23 @@
 // Fungsi pembagian dengan pengecekan error
 function bagiAngka(a, b) {
-    try {
-        // Cek kalau pembagi nol
-        if (b === 0) {
-            throw new Error("Tidak bisa membagi dengan nol!");
-        }
-        
-        // Cek kalau variabel tidak ditemukan/undefined
-        if (a === undefined || b === undefined) {
-            throw new Error("Variabel tidak dikenali");
-        }
-        
-        let hasil = a / b;
-        console.log("Hasil pembagian :", hasil);
-        return hasil;
-        
-    } catch (error) {
-        // Tangani error di sini
-        console.log("Error:", error.message);
+  try {
+    // Cek kalau pembagi nol
+    if (b === 0) {
+      throw new Error("Tidak bisa membagi dengan nol!");
     }
+
+    // Cek kalau variabel tidak ditemukan/undefined
+    if (a === undefined || b === undefined) {
+      throw new Error("Variabel tidak dikenali");
+    }
+
+    let hasil = a / b;
+    console.log("Hasil pembagian :", hasil);
+    return hasil;
+  } catch (error) {
+    // Tangani error di sini
+    console.log("Error:", error.message);
+  }
 }
 
 // Test case 1: Pembagian normal
