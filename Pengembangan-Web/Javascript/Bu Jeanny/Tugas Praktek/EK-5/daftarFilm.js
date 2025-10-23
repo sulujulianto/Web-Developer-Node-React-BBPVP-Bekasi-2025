@@ -1,33 +1,24 @@
 const fs = require("fs");
 
-// Baca file film.json
-const bacaData = () => {
-  try {
-    const data = fs.readFileSync("film.json", "utf8");
-    return JSON.parse(data);
-  } catch (error) {
-    return [];
-  }
-};
+// Data film awal
+let daftarFilm = [
+    {
+        judul: "Pengabdi Setan",
+        tahun: 2017,
+        genre: "Horor"
+    },
+    {
+        judul: "Pengabdi Setan 2: Communion",
+        tahun: 2022,
+        genre: "Horor"
+    }
+];
 
-// Buat object film baru
-const filmBaru = {
-  judul: "Pengabdi Setan 2",
-  tahun: 2022,
-  genre: "Horor",
-};
-
-// Baca daftar film yang sudah ada
-let daftarFilm = bacaData();
-
-// Tambahkan film baru ke array
-daftarFilm.push(filmBaru);
-
-// Simpan kembali ke file JSON
+// Simpan ke file JSON
 fs.writeFileSync("film.json", JSON.stringify(daftarFilm, null, 2));
 
-// Tampilkan semua film
+// Tampilkan daftar film
 console.log("Daftar Film:");
-daftarFilm.forEach((film, index) => {
-  console.log(`${index + 1}. ${film.judul} (${film.tahun}) - ${film.genre}`);
-});
+for (let i = 0; i < daftarFilm.length; i++) {
+    console.log((i + 1) + ". " + daftarFilm[i].judul + " (" + daftarFilm[i].tahun + ") - " + daftarFilm[i].genre);
+}
