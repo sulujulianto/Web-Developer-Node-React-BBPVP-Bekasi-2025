@@ -70,7 +70,7 @@ The training ran from **October 14 to December 9, 2025**, with a total of **41 e
 - React.js  
 - REST API & JSON  
 - HTML & CSS  
-- CRUD Application  
+- CRUD Application  (MySQL)
 
 ---
 
