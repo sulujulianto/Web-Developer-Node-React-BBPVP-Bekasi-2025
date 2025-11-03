@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model mahasiswa {
+  id         Int      @id @default(autoincrement())
+  nama       String   @db.VarChar(45)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  nilai      nilai[]
+}
+
+model mata_kuliah {
+  id         Int      @id @default(autoincrement())
+  nama       String   @db.VarChar(255)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  nilai      nilai[]
+}
+
+model nilai {
+  id              Int          @id @default(autoincrement())
+  mata_kuliah_id  Int
+  mahasiswa_id    Int
+  skor            Int
+  indeks          String       @db.VarChar(255)
+  created_at      DateTime     @default(now())
+  updated_at      DateTime     @updatedAt
+
+  mata_kuliah mata_kuliah @relation(fields: [mata_kuliah_id], references: [id])
+  mahasiswa   mahasiswa   @relation(fields: [mahasiswa_id], references: [id])
+
+  @@unique([mata_kuliah_id, mahasiswa_id])
+}
