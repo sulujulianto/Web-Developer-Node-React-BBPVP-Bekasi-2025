@@ -64,7 +64,7 @@ The program was divided into four main phases:
    🏫 Covered Node.js, React.js, REST API, and CRUD application development using MySQL through project-based learning.  
 
 4. **On the Job Training (OJT)**  
-   📅 November 12 – December 9, 2025 (20 weekdays)  
+   📅 November 17 – December 9, 2025 (20 weekdays)  
    🧰 Practical industry placement applying web development skills in real work environments.
 
 ---
