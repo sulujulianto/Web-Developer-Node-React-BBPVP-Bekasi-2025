@@ -37,7 +37,7 @@ Pelatihan dibagi menjadi empat tahap utama:
    🏫 Pendalaman Node.js, React.js, REST API, dan pengembangan aplikasi CRUD berbasis proyek menggunakan MySQL.  
 
 4. **On the Job Training (OJT / Praktek Kerja Lapangan)**  
-   📅 12 November – 9 Desember 2025 (20 hari kerja)  
+   📅 17 November – 9 Desember 2025 (20 hari kerja)  
    🧰 Peserta menerapkan kompetensi web development langsung di industri untuk memperoleh pengalaman kerja nyata.
 
 ---
