@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background-color: #f6f4eb;
+}
+
+body {
+  font-family: 'Work Sans', 'Gill Sans', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  background: radial-gradient(circle at 20% 20%, rgba(19, 62, 135, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(242, 183, 5, 0.08), transparent 25%),
+    #f6f4eb;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
